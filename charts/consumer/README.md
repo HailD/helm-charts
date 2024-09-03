@@ -8,7 +8,7 @@ Lava helm chart for the consumer service
 
 ## Prerequisites
 
-Before deploying the consumer chart you'll need to do few imporatnt things:
+Before deploying the consumer chart you'll need to do few important things:
 
 * Create wallet and export it, or export an existing one
 
@@ -70,7 +70,7 @@ kubectl apply -f exported-key.yaml -n lava-system
 
 ### Modify values file
 
-The final step is to refrence the newly created secrets in the chart's values file:
+The final step is to reference the newly created secrets in the chart's values file:
 
 ```yaml
 # values.yaml

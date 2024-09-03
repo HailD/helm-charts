@@ -101,7 +101,7 @@ certificate:
   privateKey:
     # -- Rotation policy of private key when certificate is re-issued. Either: `Never` or `Always`
     rotationPolicy: Never
-    # -- The private key cryptography standards (PKCS) encoding for private key. Either: `PCKS1` or `PKCS8`
+    # -- The private key cryptography standards (PKCS) encoding for private key. Either: `PKCS1` or `PKCS8`
     encoding: PKCS1
     # -- Algorithm used to generate certificate private key. One of: `RSA`, `Ed25519` or `ECDSA`
     algorithm: RSA

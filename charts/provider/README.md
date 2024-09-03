@@ -18,7 +18,7 @@ Providers earn LAVA tokens as fees for fulfilling these requests, creating an in
 
 ## Prerequisites
 
-Before deploying the provider chart you'll need to do two imporatnt things:
+Before deploying the provider chart you'll need to do two important things:
 
 * Create wallet and export it, or export an existing one
 * Create configuration for the provider
@@ -79,10 +79,10 @@ EOF
 kubectl apply -f exported-key.yaml -n my-namespace
 ```
 
-### Create secert configuration for provider
+### Create secret configuration for provider
 
 Most provider configurations point to secure nodes and should remain encrypted on the cluster.
-For this you'll have to create another secert containing the entire nodes' configuration, for example:
+For this you'll have to create another secret containing the entire nodes' configuration, for example:
 
 ```yaml
 base64 -w 0 <<EOF
@@ -146,7 +146,7 @@ kubectl apply -f provider-config.yaml -n my-namespace
 
 ### Modify values file
 
-The final step is to refrence the newly created secrets in the chart's values file:
+The final step is to reference the newly created secrets in the chart's values file:
 
 ```yaml
 # values.yaml
