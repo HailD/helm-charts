@@ -72,6 +72,8 @@ ingressGrpc:
   path: /
   # -- Ingress path type. One of `Exact`, `Prefix` or `ImplementationSpecific`
   pathType: Prefix
+  # -- The name of the secret containing the TLS certificate
+  tlsSecretName: provider-grpc-tls
 
 # TLS certificate configuration via cert-manager
 certificate:
