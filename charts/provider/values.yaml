@@ -60,6 +60,8 @@ service:
   type: ClusterIP
   # -- Provider service port
   port: 2200
+  # -- Provider service appProtocol
+  appProtocol: ""
 
 ingressGrpc:
   # -- Enable an ingress resource for the provider

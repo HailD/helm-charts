@@ -14,6 +14,9 @@ spec:
       targetPort: grpc
       protocol: TCP
       name: grpc
+      {{- if $.Values.service.appProtocol }}
+      appProtocol: {{ $.Values.service.appProtocol }}
+      {{- end }}
   {{- if $.Values.metrics.enabled }}
     - port: {{ $.Values.metrics.port }}
       targetPort: metrics
